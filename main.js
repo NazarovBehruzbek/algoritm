@@ -315,3 +315,71 @@
 //     console.log(qiymat);
 //     }
    
+// const arr = [4, 5, 7, 8, 6, 9]
+// const result = [];
+// for(let i=0; i<arr.length; i++){
+//     result.push(arr[i]);
+//     result.push((arr[arr.length-i-1]))
+// }
+// console.log(result);
+
+// function rangeSum(arr, K, L){
+//     let sum = 0;
+//     for(let i = K; i<=L; i++){
+//         sum+=arr[i];
+//     }
+//     return sum;
+// }
+// const arr = [1, 6, 9, 5, 8, 10, 15];
+// const K=2;
+// const L=5;
+// console.log(rangeSum(arr, K, L));
+
+
+// function getSingleArr(arr) {
+//     let res = []
+//     let result = new Set(arr)
+//     res=[...result]
+//     return res
+
+// }
+// let arr =  [7, 4, 2, 3, 1, 4, 5, 2, 4, 5, 7 ,7, 7]
+// console.log(getSingleArr(arr))
+
+// let arr = [7,4,9,2,3,1,5];
+// let max=Math.max(...arr)
+// let min=Math.min(...arr)
+// let maxindex=0; 
+// let minindex=0;  
+// for (let i = 0; i < arr.length; i++) {
+//    if (arr[i] === max){
+//     maxindex=i
+//    } else if (arr[i] === min){
+//     minindex=i
+//    }
+// }
+// [arr[2], arr[5]] = [arr[5], arr[2]];
+// console.log(arr);
+
+// let arr = [1, 5, 8, 9, 10];
+// let result = []
+// for(let i=1; i<arr.length; i++){
+//     result.push(arr[i])
+// }
+// result.push(arr[0])
+// console.log(result);
+// n = 5, A = 2, B = 3
+// let n= 5; 
+// let A = 2; 
+// let B = 3;
+// let arr = [2,3,5,10];
+// let sum = B; 
+// for(i=0; i<n; i++){
+//   for( let j = 0; j<=i; j++ ){
+//      sum+=arr[j]
+//   }
+//   arr.push(sum)
+// }
+// console.log(arr);
+
+ 
