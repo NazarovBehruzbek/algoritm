@@ -125,7 +125,7 @@
 //     else{
 //         console.log("Tub emas");
 //     }
-   
+
 //     rl.close();
 // });
 
@@ -145,7 +145,7 @@
 //     }else{
 //         console.log(Math.sqrt(number1/number2));
 //     }
-   
+
 //     rl.close();
 // })
 // });
@@ -314,7 +314,7 @@
 //     }
 //     console.log(qiymat);
 //     }
-   
+
 // const arr = [4, 5, 7, 8, 6, 9]
 // const result = [];
 // for(let i=0; i<arr.length; i++){
@@ -382,4 +382,98 @@
 // }
 // console.log(arr);
 
- 
+//  let arr = [ 4, 5, 7, 8, 6, 9];
+//  let numer = 0;
+
+//  for(let i = 0; i < arr.length; i++){
+//     if(arr[i]%2!==0){
+//         numer+=1
+//         console.log(arr[i]);
+//     }
+//  }
+//  console.log(numer);
+
+// 5
+
+// Massiv yaratish
+
+// let arr = [3,56,8,9,4,9];
+
+// for(let i=arr.length-1; i>=0; i-=2){
+//     console.log(arr[i]);
+// }
+
+// function searchAllElements(arr, k) {
+//     var indices = [];
+
+//     for (var i = 0; i < arr.length; i++) {
+//         if (arr[i] === k) {
+//             indices.push(i); // Qiymat topilgan indeksni ro'yxatga qo'shamiz
+//         }
+//     }
+
+
+//     return indices;
+// }
+
+// // Test qilish
+// var arr = [2, 3, 5, 3, 8, 3, 4];
+// var k = 3;
+// var result = searchAllElements(arr, k);
+
+// console.log("Massiv:", arr);
+// console.log("Qidirilgan qiymat:", k);
+// console.log("Qiymatni topgan indekslar:", result);
+
+
+// function searchAllElements(arr, k) {
+//     var indices = arr.map((_, index) => index)  
+//         .filter(index => arr[index] === k); 
+
+//     return indices;
+// }
+
+// function getElementsOneTime(arr) {
+//     let result = [];
+
+//     // Har bir element uchun tekshirish
+//     arr.forEach(element => {
+//         // Element faqat 1 marta ishtirok etganligini tekshirish
+//         if (arr.filter(item => item === element).length === 1) {
+//             // Agar 1 marta ishtirok etgan bo'lsa, natijaga qo'shish
+//             result.push(element);
+//         }
+      
+//     });
+
+//     return result;
+// }
+
+// // Test uchun massiv
+// let inputArr = [1, 5, 6, 1, 5, 7, 2];
+// let outputArr = getElementsOneTime(inputArr);
+// console.log(outputArr); // Natijani chiqarish
+
+function getElementsOneTime(arr) {
+    const elementCounts = {}; // Object to store element counts
+
+    // Count occurrences of each element in the array
+    arr.forEach(element => {
+        elementCounts[element] = (elementCounts[element] || 0) + 1;
+    });
+
+    // Filter out elements that appear only once
+    const result = [];
+    arr.forEach(element => {
+        if (elementCounts[element] === 1) {
+            result.push(element);
+        }
+    });
+
+    return result;
+}
+
+// Test the function
+const inputArr = [1, 5, 6, 1, 5, 7, 2];
+const outputArr = getElementsOneTime(inputArr);
+console.log(outputArr); // Output: [6, 7, 2]
