@@ -454,26 +454,146 @@
 // let outputArr = getElementsOneTime(inputArr);
 // console.log(outputArr); // Natijani chiqarish
 
-function getElementsOneTime(arr) {
-    const elementCounts = {}; // Object to store element counts
+// function getElementsOneTime(arr) {
+//     const elementCounts = {}; // Object to store element counts
 
-    // Count occurrences of each element in the array
-    arr.forEach(element => {
-        elementCounts[element] = (elementCounts[element] || 0) + 1;
-    });
+//     // Count occurrences of each element in the array
+//     arr.forEach(element => {
+//         elementCounts[element] = (elementCounts[element] || 0) + 1;
+//     });
 
-    // Filter out elements that appear only once
-    const result = [];
-    arr.forEach(element => {
-        if (elementCounts[element] === 1) {
-            result.push(element);
-        }
-    });
+//     // Filter out elements that appear only once
+//     const result = [];
+//     arr.forEach(element => {
+//         if (elementCounts[element] === 1) {
+//             result.push(element);
+//         }
+//     });
 
-    return result;
-}
+//     return result;
+// }
 
-// Test the function
-const inputArr = [1, 5, 6, 1, 5, 7, 2];
-const outputArr = getElementsOneTime(inputArr);
-console.log(outputArr); // Output: [6, 7, 2]
+// // Test the function
+// const inputArr = [1, 5, 6, 1, 5, 7, 2];
+// const outputArr = getElementsOneTime(inputArr);
+// console.log(outputArr); // Output: [6, 7, 2]
+
+
+// Array10. n ta elementdan tashkil topgan massiv berilgan. Massiv elementlarini
+//  quyidagicha chiqaruvchi programma tuzilsin. A[0], A[1], A[n-1], A[n-2], A[2], A[3], A[n-3], A[n-4], ...
+
+// let arr = [1, 5, 8, 4, 9];
+// let n = arr.length;
+// let result = [1,5]
+// for(let i = 1; i<n; i++){
+//     if(i%2==0){      
+//         if(i !== n-1){
+//             result.push(arr[i]);
+//             result.push(arr[i+1]);
+//         } else{
+//             result.push(arr[i]);
+//         }
+//     }else{
+//         result.push(arr[n-i]);
+//         result.push(arr[n-i-1]);
+//     }
+// }
+// console.log(result);
+
+// // Masalan:// Massiv
+// const inputArray = [10, false, "", "Abdulaziz", null];
+
+// // Truthy va Falsy uchun bo'sh massivlar
+// const truthyArray = [];
+// const falsyArray = [];
+
+// // Massivni tekshirish
+// inputArray.forEach(item => {
+//     if (item) {
+//         truthyArray.push(item);
+//     } else {
+//         falsyArray.push(item);
+//     }
+// });
+
+// // Natijalarni konsolga chiqarish
+// console.log("Truthy:", truthyArray);
+// console.log("Falsy:", falsyArray);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi", "Papaya"];
+// console.log(fruits.copyWithin(1,0));
+
+// Array6. n ta elementdan iborat massiv berilgan. Massivning eng kichik va 
+// eng katta elementlari topilsin va o'rni almashtirilsin.
+// Input: [7, 4, 9, 2, 3, 1, 5]
+// Output:
+// Max: 9
+// Min: 1
+// [7, 4, 1, 2, 3, 9, 5]
+
+//  let arr = [7, 4, 9, 2, 9, 1, 5];
+//  let MaxArr = Math.max(...arr);
+//  let MinArr = Math.min(...arr);
+//  let maxindex = arr.indexOf(MaxArr)
+//  let minindex = arr.indexOf(MinArr);
+//  [arr[maxindex],arr[minindex]] = [arr[minindex],arr[maxindex]]
+
+//  console.log(maxindex);
+
+// Array4. n ta elementdan tashkil topgan massiv berilgan.
+//  Massiv elementlari orasidan toqlarini indekslari o'sish tartibida chiqaruvchi va 
+//  ularning sonini chiqaruvchi programma tuzilsin.
+// Massiv elementlar: 4 5 7 8 6 9
+// Natija: 5 7 9 toqlar soni = 3
+
+// let arr = [9,5,7,8,6,9,6]
+// let sum = 0;
+// for(let i=0; i<arr.length; i++){
+//     if(arr[i] % 2 !== 0){
+//         sum+=1
+//         console.log(arr[i]);
+//     }
+// }
+// console.log("Soni",sum);
+
+// let arr = [5,7,8,6,9,6];
+// let result = [];
+// let result1 = [];
+// for(let i = 0; i<arr.length; i++){
+//     if(arr[i] % 2 === 0){
+//         result.push(arr[i])
+//     } else{
+//         result1.push(arr[i])
+//     }
+// }
+// result1.reverse();
+
+// console.log(result.concat(result1))
+
+// let arr = [5,7,8,3,9,6];
+// let res = [6,3,7]
+// for(let i=arr.length-1; i>0; i-=2){
+//     res.push(arr[i])
+// }
+// console.log(res);
+
+// let arr = [2,3,4,5,6,];
+// let res = [];
+
+// for (let i = 0; i<arr.length; i++){
+//     if(i % 2 === 0 ){
+//        res.push(arr[i]);
+//       if (arr.length-1>i){
+//         res.push(arr[i+1]) 
+//       }
+//     }else{
+//         res.push(arr[arr.length-i])
+//         res.push(arr[arr.length-i-1])
+
+//     }
+// }
+// console.log(res);
+
+// [2, 3, 6, 5, 4, 5, 4, 3, 6,]
+
