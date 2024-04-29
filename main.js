@@ -597,3 +597,89 @@
 
 // [2, 3, 6, 5, 4, 5, 4, 3, 6,]
 
+// function getOddMin(arr) {
+//     // Agar massiv bo'sh yoki uzunligi 2 dan kam bo'lsa, null qaytariladi
+//     if (!arr || arr.length < 2) {
+//         return null;
+//     }
+    
+//     let min_value = Infinity;  // Eng katta qiymat bilan ishlaymiz
+    
+//     // Juft indeksli elementlardan eng kichik qiymatni tanlash
+//     for (let i = 0; i < arr.length; i += 2) {
+//         if (arr[i] < min_value) {
+//             min_value = arr[i];
+//         }
+//     }
+    
+//     return min_value;
+// }
+
+// // Misol uchun:
+// let arr = [5, 2, 8, 3, 9, 4];
+// let result = getOddMin(arr);
+// console.log("Eng kichik qiymat:", result);  // Natija: 5
+
+
+// function getEvenMax(arr) {
+//     // Agar massiv bo'sh yoki uzunligi 2 dan kam bo'lsa, null qaytariladi
+//     if (!arr || arr.length < 2) {
+//         return null;
+//     }
+    
+//     let max_value = -Infinity; // Eng kichik qiymat bilan ishlaymiz
+    
+//     // Toq indeksli elementlardan eng katta qiymatni tanlash
+//     for (let i = 1; i < arr.length; i += 2) {
+//         if (arr[i] > max_value) {
+//             max_value = arr[i];
+//         }
+//     }
+    
+//     return max_value;
+// }
+
+// // Misol uchun:
+// let arr = [5, 2, 8, 3, 9, 4];
+// let result = getEvenMax(arr);
+// console.log("Eng katta qiymat:", result); // Natija: 9
+
+
+// function findClosestToR(arr, R) {
+//     // Massiv bo'sh bo'lsa null qaytariladi
+//     if (!arr || arr.length === 0) {
+//         return null;
+//     }
+
+//     // Massivning uzunligi
+//     const n = arr.length;
+
+//     // Eng yaqin sonning boshlang'ich qiyinishi
+//     let closest = arr[0];
+//     let minDiff = Math.abs(arr[0] - R); // Boshlang'ich farqni hisoblash
+
+//     // Massivni yalpi elementlari bo'yicha tekshiramiz
+//     for (let i = 1; i < n; i++) {
+//         // Joriy element bilan R orasidagi farqni topamiz
+//         let diff = Math.abs(arr[i] - R);
+
+//         // Farq oldingidan kichik bo'lsa, yangi eng yaqin sonni saqlash
+//         if (diff < minDiff) {
+//             closest = arr[i];
+//             minDiff = diff;
+//         }
+//     }
+
+//     return closest;
+// }
+
+// // Misol uchun:
+// let arr = [3, 7, 1, 9, 4, 5, 8];
+// let R = 6;
+// let closestValue = findClosestToR(arr, R);
+
+// if (closestValue !== null) {
+//     console.log(`Massiv elementlari orasidan ${R} ga eng yaqin son:`, closestValue); // Natija: 7
+// } else {
+//     console.log("Massiv bo'sh, ya'ni eng yaqin son topilmadi.");
+// }
