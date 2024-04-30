@@ -683,3 +683,77 @@
 // } else {
 //     console.log("Massiv bo'sh, ya'ni eng yaqin son topilmadi.");
 // }
+
+// let massiv = [22, 7, 43, 61, 7, 9];
+// let maxSum = 0;
+// let maxElements = [];
+
+// // Massivdagi har bir element uchun ikki marta chiqarib o'tamiz
+// for (let i = 0; i < massiv.length; i++) {
+//     for (let j = i + 1; j < massiv.length; j++) {
+//         let sum = massiv[i] + massiv[j]; // Ikkita elementni yig'indisini hisoblaymiz
+//         // Agar yig'indi eng katta bo'lsa, yangilaymiz
+//         if (sum > maxSum) {
+//             maxSum = sum;
+//             maxElements = [massiv[i], massiv[j]]; // Eng katta yig'indiga mos keladigan elementlarni saqlaymiz
+//         }
+//     }
+// }
+
+// console.log("Eng katta yig'indisi bo'lgan elementlar:", maxElements); // Output: [43, 61]
+
+
+
+// let massiv = [3, 8, 5, 11, 9, 6];
+// let maxIndeks = 0;
+
+// // Massivning ikkinchi elementidan boshlab oxirgacha bo'lgan har bir elementni tekshiramiz
+// for (let i = 1; i < massiv.length - 1; i++) {
+//     if (massiv[i] > massiv[i - 1] && massiv[i] > massiv[i + 1]) {
+//         // Agar hozirgi element o'ng va chap qo'shinisidan katta bo'lsa
+//         maxIndeks = i;
+//     }
+// }
+
+// console.log("Oxirgi lokal maksimum indeksi:", maxIndeks); // Output: 3
+
+
+// let massiv = [22, 7, 43, 61, 7];
+// let indekslar = [];
+
+// // Massivdagi har bir element uchun indeksni tekshiramiz
+// for (let i = 0; i < massiv.length - 1; i++) {
+//     for (let j = i + 1; j < massiv.length; j++) {
+//         if (massiv[i] === massiv[j]) {
+//             // Agar ikki element bir xil bo'lsa, indekslar ro'yxatiga qo'shib qo'yamiz
+//             indekslar.push(i);
+//             indekslar.push(j);
+//             break; // 2 ta bir xil qiymatli elementni topganimiz uchun chiqamiz
+//         }
+//     }
+// }
+
+// console.log("Bir xil qiymatli elementlar indekslari:", indekslar); // Output: [1, 4]
+
+// Sample array
+let arr = [3, 5, 2, 5, 5, 3, 7, 8, 5];
+
+// Object to keep track of element frequencies
+// let savat = {};
+// let engkop = 0;
+// let soni = 0;
+
+// // Calculate frequencies of elements in the array
+// arr.forEach(element => {
+//     savat[element] = (savat[element] || 0) + 1;
+//     console.log(savat[element]);
+//     // Update most frequent element if needed
+//     if (savat[element] > soni) {
+//         soni = savat[element];
+//         engkop = element;
+//     }
+// });
+// console.log(savat);
+// // Output the most frequent element and its count
+// console.log("Most frequent element:", engkop);
+// console.log("Frequency:", soni);
