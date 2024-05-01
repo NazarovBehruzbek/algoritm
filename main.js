@@ -736,7 +736,7 @@
 // console.log("Bir xil qiymatli elementlar indekslari:", indekslar); // Output: [1, 4]
 
 // Sample array
-let arr = [3, 5, 2, 5, 5, 3, 7, 8, 5];
+// let arr = [3, 5, 2, 5, 5, 3, 7, 8, 5];
 
 // Object to keep track of element frequencies
 // let savat = {};
@@ -757,3 +757,69 @@ let arr = [3, 5, 2, 5, 5, 3, 7, 8, 5];
 // // Output the most frequent element and its count
 // console.log("Most frequent element:", engkop);
 // console.log("Frequency:", soni);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let arr = [10,5,8,7,9,12,11];
+// let result = [];
+// for(let i = 0; i < arr.length; i++){
+//     let tub = true;
+//     for(let j = 2; j<=Math.sqrt(arr[i]); j++){
+//         if(arr[i] % j === 0 ){
+//             tub = false;
+//             break;
+//         } 
+//     }
+//     if(tub){
+//         result.push(arr[i])
+//     }
+// }
+// console.log(result);
+
+// function tubBolganElementlarniChiqar(arr) {
+//     // Tub sonni aniqlash funksiyasi
+//     function tubSonmi(x) {
+//         if (x < 2) return false;
+//         for (let i = 2; i <= Math.sqrt(x); i++) {
+//             if (x % i === 0) return false;
+//         }
+//         return true;
+//     }
+
+//     // Massivdan tub bolgan elementlarni chiqarish
+//     for (let i = 0; i < arr.length; i++) {
+//         if (tubSonmi(arr[i])) {
+//             console.log("Massivdagi tub bolgan element:", arr[i]);
+//         }
+//     }
+// }
+
+// // Test qilish
+// let arr = [10, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Test uchun berilgan massiv
+// tubBolganElementlarniChiqar(arr);
