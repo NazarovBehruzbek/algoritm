@@ -758,32 +758,47 @@
 // console.log("Most frequent element:", engkop);
 // console.log("Frequency:", soni);
 
+// function chiqaruvchi(n){
+//         for(let i=1; i<=n; i++){
+//             let line ="";
+//             for(let j=1; j<=i; j++){
+//                 line += "1 ";
+//             }
+//             console.log(line)
+//         }
+//     }
+    
+//     let n=5;
+//     chiqaruvchi(n);
+
+// let text = "Assalomu ALayKum";
+// let result = ''
+// for(let i = 0; i<text.length; i++){
+//     if(text[i] === text[i].toUpperCase()){
+//         result += text[i].toLowerCase()
+//     }else{;
+//         result+= text[i].toUpperCase()
+//     }
+// }
+// console.log(result);
 
 
+// function myApp(text) {
+//     let result = "";
+//     for (let i = 0; i < text.length; i++) {
+//         let c = text[i];
+//         if (c === c.toUpperCase()) {
+//             result += c.toLowerCase();
+//         } else {
+//             result += c.toUpperCase();
+//         }
+//     }
+//     return result; 
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// let text = 'Salom, Dunyo!';
+// let result = myApp(text);
+// console.log(result);
 
 
 // let arr = [10,5,8,7,9,12,11];
@@ -823,3 +838,197 @@
 // // Test qilish
 // let arr = [10, 2, 3, 4, 5, 6, 7, 8, 9, 10]; // Test uchun berilgan massiv
 // tubBolganElementlarniChiqar(arr);
+
+
+// function getNameMaxMinAge(arr) {
+   
+//     let oldestName = arr[0].name;
+//     let youngestName = arr[0].name;
+//     let maxAge = arr[0].age;
+//     let minAge = arr[0].age;
+
+//     for (let i = 1; i < arr.length; i++) {
+//         if (arr[i].age > maxAge) {
+//             maxAge = arr[i].age;
+//             oldestName = arr[i].name;
+//         }
+//         if (arr[i].age < minAge) {
+//             minAge = arr[i].age;
+//             youngestName = arr[i].name;
+//         }
+//     }
+
+//     return [oldestName, youngestName];
+// }
+
+// const arr = [
+//     { name: "Abdulaziz", age: 33 },
+//     { name: "Erkin", age: 22 },
+//     { name: "Temur", age: 34 },
+//     { name: "Sardor", age: 20 },
+// ];
+
+// console.log(getNameMaxMinAge(arr)); // Output: ['Temur', 'Sardor']
+
+// const marks = [".", ",", ";", ":", "?", "!", "-", "'", '"', "(",")"];
+
+// let text = 'sad,hlk;sdf(sdfwe,sdf)asdwqf';
+// let count = 0;
+
+// for( let i = 0; i<text.length; i++){
+//     text[i] = s
+//     if(marks.includes(s)){
+//         count +=1;
+//     }
+// }
+// console.log(count);
+
+// function orttir(S, C) {
+//     return S.replace(new RegExp(C, "g"), C + C);
+//   }
+
+//   const S = "CSS is a style sheet language.";
+//   const C = "S";
+
+//   const natija = orttir(S, C);
+//   console.log(natija);
+
+
+// function isMarried(arr) {
+
+//   for (let i = 0; i < arr.length; i++) {
+
+//     if (arr[i].age >= 25) {
+//       arr[i].isMarried = true;
+//     } else {
+//       arr[i].isMarried = false;
+//     }
+//   }
+
+//   return arr;
+// }
+
+// const people =  [
+//   { name: "Abdulaziz", age: 33},
+//   { name: "Erkin", age: 22},
+//   { name: "Temur", age: 34},
+//   { name: "Sardor", age: 20},
+// ];
+
+// console.log(isMarried(people));
+
+// function getNameMaxMinAge(arr) {
+
+//     if (arr.length === 0) {
+//       return [];
+//     }
+    
+//     let maxYosh = arr[0]; 
+//     let minYosh = arr[0];
+    
+//     for (let i = 1; i < arr.length; i++) {
+
+//       if (arr[i].age > maxYosh.age) {
+//         maxYosh = arr[i];
+//       }
+//       if (arr[i].age < minYosh.age) {
+//         minYosh = arr[i];
+//       }
+//     }
+    
+//     return [maxYosh.name, minYosh.name];
+//   }
+  
+//   const odamlar = [
+//     { name: "Abdulaziz", age: 33 },
+//     { name: "afasf", age: 50 },
+//     { name: "Erkin", age: 22 },
+//     { name: "Temur", age: 34 },
+//     { name: "Sardor", age: 20 },
+//   ];
+  
+//   const res = getNameMaxMinAge(odamlar);
+//   console.log(res);
+
+//   const people = [
+//     { name: "Abdulaziz", age: 33 },
+//     { name: "afasf", age: 40 },
+//     { name: "afasf", age: 50 },
+//     { name: "Erkin", age: 22 },
+//     { name: "Temur", age: 34 },
+//     { name: "Sardor", age: 20 },
+//   ];
+//   let katta=people[0]
+//   let kichik=people[0]
+  
+//   for(let i=1;i<people.length;i++){
+//       if(people[i].age>katta.age){
+//           katta = people[i]
+//       }
+//       if(people[i].age<kichik.age){
+//           kichik = people[i]
+//       }
+//   }
+
+// console.log(katta.name," ",kichik.name);
+// const people = [
+//     { name: "Abdulaziz", age: 33 },
+//     { name: "Erkin", age: 22 },
+//     { name: "Temur", age: 34 },
+//     { name: "Sardor", age: 20 },
+//   ];
+
+//   let result = people.map(person => {
+//       console.log(person.age);
+//   })
+
+  
+//   let result = [];
+//   let maximum = Math.max(...people.map(person => person.age)); 
+//   let minimum = Math.min(...people.map(person => person.age));
+  
+//   for (let i = 0; i < people.length; i++) {
+//     if (people[i].age === maximum || people[i].age === minimum) {
+//       result.push(people[i].name);
+//     }
+//   }
+  
+//   console.log(result);
+
+// // Berilgan obyekt
+// const input = {1: 20, 2: 30, 3: 20, 4: 40, 5: 30, 6: 50, 7: 40, 8: 20};
+
+// // Yangi obyekt uchun bo'sh obyekt
+// const result = {};
+
+// // Har bir kalit-qiymat juftligini olamiz
+// for (const key in input) {
+//     const value = input[key];
+//     console.log(value);
+
+//     // Qiymatni kalit sifatida ishlatib, yangi obyektga qo'shamiz
+//     if (!result[value]) {
+//         // Agar qiymat allaqachon mavjud emas bo'lsa, yangi massiv yaratamiz
+//         result[value] = [key];
+//     } else {
+//         // Agar qiymat allaqachon mavjud bo'lsa, massivga kalitni qo'shamiz
+//         result[value].push(key);
+//     }
+// }
+
+// // Natijani ekranga chiqaramiz
+// console.log(result);
+
+// const input = {1: 20, 2: 30, 3: 20, 4: 40, 5: 30, 6: 50, 7: 40, 8: 20};
+// const result = {}
+// let keys = Object.keys(input);
+// for( i = 1; i <= keys.length; i ++ ){
+//     let value = input[i]
+//     if(!result[value]){
+//         result[value] = [i]
+//     } else{
+//         result[value].push(i)
+//     }
+// }
+// console.log(result);
+
