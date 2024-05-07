@@ -1077,3 +1077,35 @@
 
 // console.log("Kalitlar yig'indisi:", keysSum); // Kalitlar yig'indisi: 15
 // console.log("Qiymatlar yig'indisi:", valuesSum); // Qiymatlar yig'indisi: 55
+
+// function createSquareObject(n) {
+//     let squareObject = {};
+
+//     // Kalitlarni va qiymatlarni yaratish
+//     for (let i = 1; i <= n; i++) {
+//         squareObject[i] = i * i;
+//     }
+
+//     return squareObject;
+// }
+
+// // Masala 1: n = 5 uchun kvadratlar obyektini yaratish
+// let n = 5;
+// let squares = createSquareObject(n);
+// console.log(squares); // {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+// // Masala 2: Obyektning kalitlari va qiymatlari yig'indisini hisoblash
+// let keysSum = Object.keys(squares).reduce((sum, key) => sum + parseInt(key), 0);
+// let valuesSum = Object.values(squares).reduce((sum, value) => sum + value, 0);
+
+// console.log("Kalitlar yig'indisi:", keysSum); // Kalitlar yig'indisi: 15
+// console.log("Qiymatlar yig'indisi:", valuesSum); // Qiymatlar yig'indisi: 55
+
+// let n = 5;
+// let squareObject = {};
+
+// for (let i = 1; i <= n; i++) {
+//     squareObject[i] = i * i;
+// }
+
+// console.log(squareObject); // {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
