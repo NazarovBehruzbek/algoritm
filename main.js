@@ -1032,3 +1032,48 @@
 // }
 // console.log(result);
 
+// let arr = []
+
+// const rightAnswers = { 1: "B", 2: "A", 3: "C", 4: "D", 5: "B", 6: "C", 7: "A", 8: 'D', 9: "A", 10: "B" };
+// const myAnswers = { 1: "C", 2: "A", 3: "D", 4: "D", 5: "B", 6: "C", 7: "B", 8: "C", 9: "A", 10: "C" };
+
+// let correctCount = 0;
+// let incorrectCount = 0;
+
+// // Tog'ri va noto'g'ri javoblarni hisoblash
+// for (let i = 1; i <= 10; i++) {
+//     let questionNumber = i.toString(); // Savol raqamini stringga aylantiramiz
+
+//     if (rightAnswers[questionNumber] === myAnswers[questionNumber]) {
+//         correctCount++;
+//     } else {
+//         incorrectCount++;
+//     }
+// }
+
+// console.log("Tog'ri javoblar soni:", correctCount);    // Tog'ri javoblar soni: 5
+// console.log("Noto'g'ri javoblar soni:", incorrectCount); // Noto'g'ri javoblar soni: 5
+
+
+// let squareObject = {
+//     1: 1,
+//     2: 4,
+//     3: 9,
+//     4: 16,
+//     5: 25
+// };
+
+// // Kalitlarni yig'indisi
+// let keysSum = 0;
+// for (let key in squareObject) {
+//     keysSum += parseInt(key);
+// }
+
+// // Qiymatlarni yig'indisi
+// let valuesSum = 0;
+// for (let key in squareObject) {
+//     valuesSum += squareObject[key];
+// }
+
+// console.log("Kalitlar yig'indisi:", keysSum); // Kalitlar yig'indisi: 15
+// console.log("Qiymatlar yig'indisi:", valuesSum); // Qiymatlar yig'indisi: 55
