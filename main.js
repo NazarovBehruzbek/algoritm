@@ -1149,6 +1149,9 @@
 //   );
   
 //   console.log("Total Cost:", totalCost); // Output the total cost
-
- yqiweow681927
- asdasdsad
+let  qiyamt = prompt("Api")
+let res = ''
+let nuqta = qiyamt.split('.');
+console.log(nuqta);
+res = nuqta.join(' [.] ');
+console.log(res);
