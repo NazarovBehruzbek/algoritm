@@ -876,7 +876,7 @@
 // let count = 0;
 
 // for( let i = 0; i<text.length; i++){
-//     text[i] = s
+//     let s = text[i] 
 //     if(marks.includes(s)){
 //         count +=1;
 //     }
@@ -1149,9 +1149,146 @@
 //   );
   
 //   console.log("Total Cost:", totalCost); // Output the total cost
-let  qiyamt = prompt("Api")
-let res = ''
-let nuqta = qiyamt.split('.');
-console.log(nuqta);
-res = nuqta.join(' [.] ');
-console.log(res);
+// let  qiyamt = prompt("Api")
+// let res = ''
+// let nuqta = qiyamt.split('.');
+// console.log(nuqta);
+// res = nuqta.join(' [.] ');
+// console.log(res);
+
+
+// let arr = [7, 4, 9, 2, 5, 15, 6, 7, 9, 5, 7];
+// let countItem = {};
+// let qiymat = 0
+// for (let i = 0; i < arr.length; i++) {
+//     let number = arr[i];
+//     if (countItem[number]) {
+//         countItem[number]++;
+//     } else {
+//         countItem[number] = 1;
+//     }
+// }
+
+// for (let number in countItem) {
+//     console.log(`${number} -> ${countItem[number]}`);
+// }
+
+// let arr = [2,5,7,5,8,9,0,5,12,5,78,5,7,5];
+// let counter = 0;
+// let counterArr = [];
+// let uniqueSet = new Set(arr);
+// let newArr = [...uniqueSet];
+
+// for(let i = 0; i<newArr.length; i++){
+//     for(let j = i; j< arr.length; j++){
+//         if(newArr[i] === arr[j]){
+//             counter ++
+//         }      
+//     }
+//     counterArr.push(counter)
+//     counter = 0
+// }
+// let maxCount = counterArr.indexOf(Math.max(...counterArr))
+
+// console.log(newArr[maxCount], " son", counterArr[maxCount], " marta qatnashgan");
+
+// let arr = [1, 2,2,2, 3, 4, 4, 5, 6, 7, 8];
+// maxCount = 1;
+// let maxElement;
+// for(let i = 0; i < arr.length; i++){
+//     let count = 0;
+//     for(let j = 0; j < arr.length; j++){
+//         if(arr[i]===arr[j])
+//         count++;
+//     }
+//     if(count>maxCount){
+//         maxCount = count;
+//         maxElement = arr[i];
+//     }
+// }
+// console.log(maxElement+" elementi "+maxCount+" marta qatnashgan");
+// let str=prompt("Satrni kiriting=>");
+// let a=0;
+// let  boolean=true;
+// for (let i = 0; i <str.length; i++) {
+//     if(str.charAt(i)=="(") ++a; 
+//     if(str.charAt(i)==")") --a;
+//     if(a==-1){
+//         boolean=false;
+//     break; 
+// }
+// }
+// if(a!=0){
+//     boolean=false;
+// }
+// console.log(boolean);
+
+// let name = "Behruz";
+// let age = 25;
+// let person = new Object;
+
+// const person = {
+//     name : "Behruz",
+//     age: 23,
+//     surname: "Nazarov"
+// }
+// const keys = Object.keys(person)
+
+// for(let i = 0; i<keys.length; i++){
+//     console.log(person.name);
+// }
+
+// person.surname = "Nazarov"
+
+// console.log(person);
+
+
+// function getAverageAge(arr){
+//   let middle = 0;
+//   for(let i = 0; i< arr.length; i++){
+//     middle+= arr[i].age
+//   }
+//   return middle/arr.length
+// }
+
+// const people = [
+//     { name: "Abdulaziz", age: 33 },
+//     { name: "Erkin", age: 22 },
+//     { name: "Temur", age: 34 },
+//     { name: "Sardor", age: 20 },
+//   ];
+  
+//   console.log(getAverageAge(people))
+
+
+// const arr = [
+//     { name: "Abdulaziz", age: 33},
+//     { name: "Erkin", age: 22},
+//     { name: "Temur", age: 34},
+//     { name: "Sardor", age: 20},
+//   ];
+  
+//   for(let i = 0; i< arr.length; i++){
+//     if(arr[i].age>=25){
+//         arr[i].isMarried = true
+//     } 
+//     else{
+//         arr[i].isMarried = false
+//     }
+//   }
+//   console.log(arr);
+
+const input = {1: 20, 2: 30, 3: 20, 4: 40, 5: 30, 6: 50, 7: 40, 8: 20};
+const result = {}
+let keys = Object.keys(input);
+for( i = 1; i <= keys.length; i ++ ){
+    let value = input[i]
+    console.log(value);
+
+    if(!result[value]){
+        result[value] = [i]
+    } else{
+        result[value].push(i)
+    }
+}
+console.log(result);
